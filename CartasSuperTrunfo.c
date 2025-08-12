@@ -54,7 +54,7 @@
 int main() {
 // Declaração de variáveis
     char estado1 = 'A', estado2 = 'B';
-    char codigo1 = '01', codigo2 = '02';
+    char codigo1[2] = '01', codigo2[2] = '02';
     char nome_da_cidade1[50], nome_da_cidade2[50];
     int populacao1, populacao2;
     float area1, area2;
