@@ -10,7 +10,7 @@ int main() {
 
     char estado1 = 'A';
     char codigo1[3] = "01";
-    char nome_da_cidade1[50] = "Distrito_Federal";
+    char nome_cidade1[50] = "DF";
     int populacao1;
     float area1;
     float PIB1;
@@ -23,7 +23,7 @@ int main() {
     
     printf("Estado: %c\n", estado1); //Saída: Estado: 
     printf("Código: %c%s\n", estado1, codigo1); //Saída: Código: B02
-    printf("Nome da Cidade: %c\n", nome_da_cidade1);
+    printf("Nome da Cidade: %c\n", nome_cidade1);
  
     printf("População: ");
     scanf("%d", &populacao1);
