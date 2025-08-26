@@ -23,8 +23,7 @@ int main() {
     
     printf("Estado: %c\n", estado1); //Saída: Estado: 
     printf("Código: %c%s\n", estado1, codigo1); //Saída: Código: B02
-    
-    printf("Nome da Cidade: ", nome_da_cidade1);
+    printf("Nome da Cidade: %c\n", nome_da_cidade1);
  
     printf("População: ");
     scanf("%d", &populacao1);
@@ -67,7 +66,7 @@ int main() {
     printf("Estado: %c\n", estado2); //Saída: Estado: B
     printf("Código: %c%s\n", estado2, codigo2); //Saída: Código: B02
 
-    printf("Nome da Cidade: ", nome_da_cidade2);
+    printf("Nome da Cidade: %c\n", nome_da_cidade2);
 
     printf("População: ");
     scanf("%d", &populacao2);
@@ -109,7 +108,7 @@ int main() {
     printf("Estado: %c\n", estado3); //Saída: Estado: C
     printf("Código: %c%s\n", estado3, codigo3); //Saída: Código: C03
 
-    printf("Nome da Cidade: ", nome_da_cidade3);
+    printf("Nome da Cidade: %c\n", nome_da_cidade3);
     
     printf("População: ");
     scanf("%d", &populacao3);
