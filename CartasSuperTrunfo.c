@@ -17,7 +17,21 @@ printf("-----Carta 1-----\n\n");
 
     //impressão dos dados da carta 1
     printf("Estado: %c\n", Estado);
-    printf("Código: %c%s\n", Estado, Codigo);
+    printf("Código: %c%c\n", Estado, Codigo);
+    printf("Nome: %s\n", Nome);
+
+    //entrada dos dados da carta 1
+    printf("População: ");
+    scanf("%d", &populacao);
+
+    printf("Área: ");
+    scanf("%f", &Area);
+
+    printf("PIB: ");
+    scanf("%f", &PIB);
+
+    printf("Pontos Turísticos: ");
+    scanf("%d", &pontos_turisticos);
 
     return 0;
 
