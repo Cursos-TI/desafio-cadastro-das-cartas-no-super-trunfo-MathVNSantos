@@ -9,7 +9,7 @@ printf("-----Carta 1-----\n\n");
 
     char EstadoA = 'A';
     char CodigoA[3] = "01"; 
-    char NomeA[20] = "Distrito Federal"; 
+    char NomeA[50]; 
     unsigned int populacaoA;
     float AreaA;
     float PIBA;
@@ -20,9 +20,12 @@ printf("-----Carta 1-----\n\n");
     //impressão dos dados da carta 1
     printf("Estado: %c\n", EstadoA);
     printf("Código: %c%s\n", EstadoA, CodigoA);
-    printf("Nome: %s\n", NomeA);
-
+    
     //entrada dos dados da carta 1
+
+    printf("Nome da Cidade: ");
+    fgets(NomeA, 50, stdin);; //lê o nome com espaços    
+    
     printf("População: ");
     scanf("%d", &populacaoA);
 
@@ -51,7 +54,6 @@ printf("-----Carta 1-----\n\n");
     o inverso da densidade populacional – quanto menor a densidade, maior o "poder")
     */
     inverso_densidadeA = 1 / densidadeA;
-
     super_poderA = (float) populacaoA + AreaA + PIBA + (float) pontos_turisticosA + pib_per_capitaA + inverso_densidadeA;
 
     printf("Super Poder: %.2f\n", super_poderA);
@@ -62,7 +64,7 @@ printf("-----Carta 2-----\n\n");
 
     char EstadoB = 'B';
     char CodigoB[3] = "01"; 
-    char NomeB[20] = "São Paulo"; 
+    char NomeB[50]; 
     unsigned int populacaoB;
     float AreaB;
     float PIBB;
@@ -73,11 +75,13 @@ printf("-----Carta 2-----\n\n");
     //impressão dos dados da carta 2
     printf("Estado: %c\n", EstadoB);
     printf("Código: %c%s\n", EstadoB, CodigoB);
-    printf("Nome: %s\n", NomeB);
-
-    //entrada dos dados da carta 2
+    
+   //entrada dos dados da carta 2
+    printf("Nome da Cidade: ");
+    fgets(NomeB, 50, stdin); //lê o nome com espaços
+    
     printf("População: ");
-    scanf("%d", &populacaoB);
+    scanf(" %d", &populacaoB);
 
     printf("Área: ");
     scanf("%f", &AreaB);
@@ -103,16 +107,18 @@ printf("-----Carta 2-----\n\n");
     /* Calculo o Super Poder: soma todos atributos numéricos (população, área, PIB, número de pontos turísticos, PIB per capita e 
     o inverso da densidade populacional – quanto menor a densidade, maior o "poder")
     */
-    inverso_densidadeB;
-    super_poderB = (float) populacaoB + AreaB + PIBB + (float) pontos_turisticosB + pib_per_capitaB + (1 / densidadeB);
+    inverso_densidadeB = 1 / densidadeB;
+    super_poderB = (float) populacaoB + AreaB + PIBB + (float) pontos_turisticosB + pib_per_capitaB + inverso_densidadeB;
 
     printf("Super Poder: %2.f\n", super_poderB);
 
     printf("\n\n");
 
-
-    //Comparação dos Super Poderes
+    //Comparação Cartas
+    printf("-----Comparação das Cartas-----\n\n");
     
+
+   
 
     return 0;
 
