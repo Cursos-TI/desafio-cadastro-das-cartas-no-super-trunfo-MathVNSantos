@@ -24,7 +24,7 @@ printf("-----Carta 1-----\n\n");
     //entrada dos dados da carta 1
 
     printf("Nome da Cidade: ");
-    fgets(NomeA, 50, stdin);; //lê o nome com espaços    
+    scanf(" %[^\n]s", NomeA); //lê o nome com espaços
     
     printf("População: ");
     scanf("%d", &populacaoA);
@@ -78,7 +78,7 @@ printf("-----Carta 2-----\n\n");
     
    //entrada dos dados da carta 2
     printf("Nome da Cidade: ");
-    fgets(NomeB, 50, stdin); //lê o nome com espaços
+    scanf(" %[^\n]s", NomeB); //lê o nome com espaços
     
     printf("População: ");
     scanf(" %d", &populacaoB);
