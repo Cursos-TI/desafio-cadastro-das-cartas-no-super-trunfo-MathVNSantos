@@ -116,10 +116,36 @@ printf("-----Carta 2-----\n\n");
 
     //Comparação Cartas
     printf("-----Comparação das Cartas-----\n\n");
+
+    printf("População: Carta %d venceu (%d)\n",
+        (populacaoA > populacaoB) * 1 + (populacaoB > populacaoA) * 2,
+        (populacaoA > populacaoB));
+
+    printf("Área: Carta %d venceu (%.2f)\n",
+        (AreaA > AreaB) * 1 + (AreaB > AreaA) * 2,)
+        (AreaA > AreaB));                           
+
+    printf("PIB: Carta %d venceu (%.2f)\n"
+        (PIBA > PIBB) * 1 + (PIBB > PIBA) * 2,
+        (PIBA > PIBB));
     
+    printf("Pontos Turísticos: Carta %d venceu (%d)\n",
+        (pontos_turisticosA > pontos_turisticosB) * 1 + (pontos_turisticosB > pontos_turisticosA) * 2,
+        (pontos_turisticosA > pontos_turisticosB));
+    
+    printf("Densidade Demográfica: Carta %d venceu (%.2f)\n",
+        (densidadeA < densidadeB) * 1 + (densidadeB < densidadeA) * 2,
+        (densidadeA < densidadeB));
 
-   
+    printf("PIB per capita: Carta %d venceu (%.2f)\n",
+        (pib_per_capitaA > pib_per_capitaB) * 1 + (pib_per_capitaB > pib_per_capitaA) * 2,
+        (pib_per_capitaA > pib_per_capitaB));
 
-    return 0;
+    printf("Super Poder: Carta %d venceu (%.2f)\n",
+        (super_poderA > super_poderB) * 1 + (super_poderB > super_poderA) * 2,
+        (super_poderA > super_poderB));
+
+    
+        return 0;
 
 }
