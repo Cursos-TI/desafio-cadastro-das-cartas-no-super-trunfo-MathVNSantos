@@ -198,15 +198,36 @@ super_poderB*/
     }
 //Escolha Area
     if ( escolha == 2 ) {
-
+        if (AreaA > AreaB) {
+            printf("Area: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (AreaB > AreaA) {
+            printf("Area: Carta 2 (%s) venceu (1)\n", NomeB);
+        }
+        else if ( AreaA == AreaB) {
+            printf("Populacao: Empate entre %s e %s(0)\n", NomeA, NomeB);
+        }
     }
 //Escolha PIB
     if ( escolha == 3 ) {
-
+        if ( PIBA > PIBB) {
+            printf("PIB: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (PIBB > PIBA) {
+            printf("PIB: Carta 2 (%s) venceu (1)\n", NomeB);            
+        }
+        else if (PIBA == PIBB) {
+            printf("PIB: Empate entre %s e %s(0)\n", NomeA, NomeB);
+        }
     }
 //Escolha Número de Pontos Turísticos
     if ( escolha == 4 ){
-
+        if (pontos_turisticosA > pontos_turisticosB) {
+            printf("Pontos Turísticos: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (pontos_turisticosB > pontos_turisticosA) {
+            printf("PIB: Carta 2 (%s) venceu (1)\n", NomeB);
+        }
     }
 
 //Escolha Densidade Populacional
