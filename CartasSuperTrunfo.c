@@ -98,6 +98,7 @@ printf("-----Carta 2-----\n\n");
 
     //impressão dos atributos derivados da carta 2
     printf("Densidade Demográfica: %.2f\n", densidadeB);
+    
     printf("PIB per capita: %.2f reais\n", pib_per_capitaB);
 
     //variável super poder e inverso da densidade populacional carta 2
@@ -145,7 +146,81 @@ printf("-----Carta 2-----\n\n");
         (super_poderA > super_poderB) * 1 + (super_poderB > super_poderA) * 2,
         (super_poderA > super_poderB));
 
-    //FimAlgoritimo
+//Comparação - Estrutura de Decisão if-else
+
+//Algoritmo para jogar escolher atributo.
+
+    int escolha;
+
+    printf("Selecione o atributo para comparar: \n");
+    printf("1 - População\n");
+    printf("2 -  Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Número de pontos turísticos\n");
+    printf("5 - Densidade Populacional\n");
+    printf("6 - PIB per Capita\n");
+    printf("7 - Super Poder");
+    scanf("%d", &escolha);
+
+// Estrutura de Decisão - Comparação entre atributos
+
+//Variáveis para copiar e colar
+/* 
+NomeA[50]
+populacaoA
+AreaA
+PIBA
+int pontos_turisticosA
+densidadeA
+pib_per_capitaA
+super_poderA
+
+NomeB[50]
+populacaoB
+AreaB
+PIBB
+pontos_turisticosB
+densidade
+pib_per_capitaB
+super_poderB*/
+
+//Escolha População
+    if ( escolha == 1 ) {
+        if (populacaoA > populacaoB) {
+            printf("Populacao: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (populacaoB > populacaoA) {
+            printf("Populacao: Carta 2 (%s) venceu (1)\n", NomeB);    
+        } 
+        else if (populacaoA == populacaoB) {
+            printf("Populacao: Empate entre %s e %s(0)\n", NomeA, NomeB)
+        }
+    }
+//Escolha Area
+    if ( escolha == 2 ) {
+
+    }
+//Escolha PIB
+    if ( escolha == 3 ) {
+
+    }
+//Escolha Número de Pontos Turísticos
+    if ( escolha == 4 ){
+
+    }
+
+//Escolha Densidade Populacional
+    if ( escolha == 5 ){
+
+    }
+//Escolha PIB per Capita
+    if ( escolha == 6 ) {
+
+    }
+//Escolha Super Poder
+    if ( escolha == 7 ) {
+
+    }
     return 0;
 
 }
