@@ -246,10 +246,10 @@ super_poderB*/
     if ( escolha == 5 ){
         printf("Atributo Selecionado: Densidade Populacional\n");
         if (densidadeA > densidadeB) {
-            printf("Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);
         }
         else if (densidadeB > densidadeA){
-            printf("Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (densidadeA == densidadeB){
             printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
