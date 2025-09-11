@@ -270,5 +270,4 @@ super_poderB*/
         } 
     }
     return 0;
-
 }
