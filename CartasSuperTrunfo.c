@@ -146,22 +146,25 @@ printf("-----Carta 2-----\n\n");
         (super_poderA > super_poderB) * 1 + (super_poderB > super_poderA) * 2,
         (super_poderA > super_poderB));
 
+    printf("\n");
 //Comparação - Estrutura de Decisão if-else
 
 //Algoritmo para jogar escolher atributo.
-
+    printf("-----Comparar: Estrutura de Decisao-----\n\n");
+    
     int escolha;
 
     printf("Selecione o atributo para comparar: \n");
     printf("1 - População\n");
-    printf("2 -  Área\n");
+    printf("2 - Área\n");
     printf("3 - PIB\n");
     printf("4 - Número de pontos turísticos\n");
     printf("5 - Densidade Populacional\n");
     printf("6 - PIB per Capita\n");
-    printf("7 - Super Poder");
+    printf("7 - Super Poder\n");
     scanf("%d", &escolha);
 
+    printf(\n)
 // Estrutura de Decisão - Comparação entre atributos
 
 //Variáveis para copiar e colar
@@ -193,7 +196,7 @@ super_poderB*/
             printf("Populacao: Carta 2 (%s) venceu (1)\n", NomeB);    
         } 
         else if (populacaoA == populacaoB) {
-            printf("Populacao: Empate entre %s e %s(0)\n", NomeA, NomeB)
+            printf("Populacao: Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 //Escolha Area
@@ -269,5 +272,8 @@ super_poderB*/
             printf("Super Poder: Empate entre %s e %s(0)\n", NomeA, NomeB);
         } 
     }
+
+    printf("\n\n");
+
     return 0;
 }
