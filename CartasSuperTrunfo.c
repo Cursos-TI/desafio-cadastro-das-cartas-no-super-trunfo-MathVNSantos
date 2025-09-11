@@ -162,9 +162,11 @@ printf("-----Carta 2-----\n\n");
     printf("5 - Densidade Populacional\n");
     printf("6 - PIB per Capita\n");
     printf("7 - Super Poder\n");
+
+    printf("Escolha: ");
     scanf("%d", &escolha);
 
-    printf(\n)
+    printf("\n");
 // Estrutura de Decisão - Comparação entre atributos
 
 //Variáveis para copiar e colar
@@ -189,90 +191,96 @@ super_poderB*/
 
 //Escolha População
     if ( escolha == 1 ) {
+        printf("Atributo Selecionado: Populacao\n");
         if (populacaoA > populacaoB) {
-            printf("Populacao: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (populacaoB > populacaoA) {
-            printf("Populacao: Carta 2 (%s) venceu (1)\n", NomeB);    
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);    
         } 
         else if (populacaoA == populacaoB) {
-            printf("Populacao: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 //Escolha Area
     if ( escolha == 2 ) {
+        printf("Atributo Selecionado: Area\n");
         if (AreaA > AreaB) {
-            printf("Area: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (AreaB > AreaA) {
-            printf("Area: Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);
         }
         else if ( AreaA == AreaB) {
-            printf("Populacao: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 //Escolha PIB
     if ( escolha == 3 ) {
+        printf("Atributo Selecionado: PIB\n");        
         if ( PIBA > PIBB) {
-            printf("PIB: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (PIBB > PIBA) {
-            printf("PIB: Carta 2 (%s) venceu (1)\n", NomeB);            
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);            
         }
         else if (PIBA == PIBB) {
-            printf("PIB: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 //Escolha Número de Pontos Turísticos
     if ( escolha == 4 ){
+        printf("Atributo Selecionado: Número de Pontos Turísticos\n");
         if (pontos_turisticosA > pontos_turisticosB) {
-            printf("Pontos Turísticos: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (pontos_turisticosB > pontos_turisticosA) {
-            printf("Pontos Turísticos: Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);
         }
         else if (pontos_turisticosA == pontos_turisticosB){
-            printf("Pontos Turísticos: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 
 //Escolha Densidade Populacional densidadeA densidadeB
     if ( escolha == 5 ){
+        printf("Atributo Selecionado: Densidade Populacional\n");
         if (densidadeA > densidadeB) {
-            printf("Densidade Populacional: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (densidadeB > densidadeA){
-            printf("Densidade Populacional: Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);
         }
         else if (densidadeA == densidadeB){
-            printf("Densidade Populacional: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 //Escolha PIB per Capita pib_per_capitaA pib_per_capitaB
     if ( escolha == 6 ) {
+        printf("Atributo Selecionado: PIB per Capita\n");
         if (pib_per_capitaA > pib_per_capitaB){
-            printf("PIB per Capita: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (pib_per_capitaB > pib_per_capitaA){
-            printf("PIB per Capita: Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);
         }
         else if (pib_per_capitaA == pib_per_capitaB){
-            printf("Densidade Populacional: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         }    
     }
 //Escolha Super Poder super_poderA super_poderB
     if ( escolha == 7 ) {
+        printf("Atributo Selecionado: Super Poder\n");
         if (super_poderA > super_poderB){
-            printf("Super Poder: Carta 1 (%s) venceu (1)\n", NomeA);
+            printf("Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (super_poderB > super_poderA){
-            printf("Super Poder: Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Carta 2 (%s) venceu (1)\n", NomeB);
         }
         else if (super_poderA == super_poderB){
-            printf("Super Poder: Empate entre %s e %s(0)\n", NomeA, NomeB);
+            printf("Empate entre %s e %s(0)\n", NomeA, NomeB);
         } 
     }
-
     printf("\n\n");
 
     return 0;
