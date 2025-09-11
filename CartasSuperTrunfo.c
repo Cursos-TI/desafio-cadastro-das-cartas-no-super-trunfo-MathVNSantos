@@ -180,7 +180,7 @@ populacaoB
 AreaB
 PIBB
 pontos_turisticosB
-densidade
+densidadeB
 pib_per_capitaB
 super_poderB*/
 
@@ -226,21 +226,48 @@ super_poderB*/
             printf("Pontos Turísticos: Carta 1 (%s) venceu (1)\n", NomeA);
         }
         else if (pontos_turisticosB > pontos_turisticosA) {
-            printf("PIB: Carta 2 (%s) venceu (1)\n", NomeB);
+            printf("Pontos Turísticos: Carta 2 (%s) venceu (1)\n", NomeB);
+        }
+        else if (pontos_turisticosA == pontos_turisticosB){
+            printf("Pontos Turísticos: Empate entre %s e %s(0)\n", NomeA, NomeB);
         }
     }
 
-//Escolha Densidade Populacional
+//Escolha Densidade Populacional densidadeA densidadeB
     if ( escolha == 5 ){
-
+        if (densidadeA > densidadeB) {
+            printf("Densidade Populacional: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (densidadeB > densidadeA){
+            printf("Densidade Populacional: Carta 2 (%s) venceu (1)\n", NomeB);
+        }
+        else if (densidadeA == densidadeB){
+            printf("Densidade Populacional: Empate entre %s e %s(0)\n", NomeA, NomeB);
+        }
     }
-//Escolha PIB per Capita
+//Escolha PIB per Capita pib_per_capitaA pib_per_capitaB
     if ( escolha == 6 ) {
-
+        if (pib_per_capitaA > pib_per_capitaB){
+            printf("PIB per Capita: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (pib_per_capitaB > pib_per_capitaA){
+            printf("PIB per Capita: Carta 2 (%s) venceu (1)\n", NomeB);
+        }
+        else if (pib_per_capitaA == pib_per_capitaB){
+            printf("Densidade Populacional: Empate entre %s e %s(0)\n", NomeA, NomeB);
+        }    
     }
-//Escolha Super Poder
+//Escolha Super Poder super_poderA super_poderB
     if ( escolha == 7 ) {
-
+        if (super_poderA > super_poderB){
+            printf("Super Poder: Carta 1 (%s) venceu (1)\n", NomeA);
+        }
+        else if (super_poderB > super_poderA){
+            printf("Super Poder: Carta 2 (%s) venceu (1)\n", NomeB);
+        }
+        else if (super_poderA == super_poderB){
+            printf("Super Poder: Empate entre %s e %s(0)\n", NomeA, NomeB);
+        } 
     }
     return 0;
 
